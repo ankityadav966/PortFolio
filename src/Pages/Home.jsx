@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Mail, MapPin } from 'lucide-react';
-import { Button } from '@/Components/ui/button';
+// import { Button } from '@/components/ui/button';
 import HeroSection from '../Components/Portfolio/HeroSection';
 import AboutSection from '../Components/Portfolio/AboutSection';
 import ResumeSection from '../Components/Portfolio/ResumeSection';
@@ -12,6 +12,7 @@ import PortfolioSection from '../Components/Portfolio/PortfolioSection';
 import TestimonialSection from '../Components/Portfolio/TestimonialSection';
 import PricingSection from '../Components/Portfolio/PricingSection';
 import ContactSection from '../Components/Portfolio/ContactSection';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
