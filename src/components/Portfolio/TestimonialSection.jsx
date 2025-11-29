@@ -1,0 +1,136 @@
+import React, { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+// Dummy Testimonials (UI same)
+const testimonials = [
+  {
+    name: "Paulo Dybala",
+    role: "CEO of IBM Global",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+    content:
+      "Ankit - A Developer with the creativity, professional and master of code. Much more than what I'm expect. High quality product & flexible price. Recommended!",
+  },
+  {
+    name: "Christina Morillo",
+    role: "Product Management of Invision App Inc",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+    content:
+      "Ankit was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer that you can trust with any project from A-Z.",
+  },
+  {
+    name: "Phil Foden",
+    role: "Director of Envato LLC",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+    content:
+      "Extremely professional and fast service! Ankit is a master of code and he is also very creative. We completed 3 projects with him and will definitely continue.",
+  },
+];
+
+export default function TestimonialSection() {
+  const [current, setCurrent] = useState(0);
+
+  const next = () => setCurrent((current + 1) % testimonials.length);
+  const prev = () =>
+    setCurrent((current - 1 + testimonials.length) % testimonials.length);
+
+  return (
+    <div className="w-full">
+      {/* Section Title */}
+      <div className="inline-block mb-8">
+        <div className="text-emerald-500 uppercase tracking-wider text-sm font-medium mb-4">
+          Testimonial
+        </div>
+      </div>
+
+      {/* Heading */}
+      <h2 className="text-5xl lg:text-6xl font-bold leading-tight mb-16">
+        Trusted by Hundred Clients
+      </h2>
+
+      {/* Testimonial Card */}
+      <div className="relative max-w-4xl mx-auto">
+        <Card className="bg-[#1a1a1a] border-gray-800 p-12 relative overflow-hidden">
+          <Quote className="absolute top-8 right-8 w-24 h-24 text-emerald-500/10" />
+
+          {/* Profile */}
+          <div className="flex items-start gap-8 mb-8">
+            <img
+              src={testimonials[current].image}
+              alt={testimonials[current].name}
+              className="w-24 h-24 rounded-2xl object-cover"
+            />
+
+            <div>
+              <h3 className="text-2xl font-bold mb-2">
+                {testimonials[current].name}
+              </h3>
+              <p className="text-gray-400">{testimonials[current].role}</p>
+            </div>
+          </div>
+
+          {/* Content */}
+          <p className="text-xl text-gray-300 leading-relaxed mb-8">
+            "{testimonials[current].content}"
+          </p>
+
+          {/* Navigation */}
+          <div className="flex items-center justify-between">
+            {/* Dots */}
+            <div className="flex gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrent(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === current ? "bg-emerald-500 w-8" : "bg-gray-600"
+                  }`}
+                />
+              ))}
+            </div>
+
+            {/* Prev/Next Buttons */}
+            <div className="flex gap-2">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={prev}
+                className="rounded-full border-gray-700 hover:border-emerald-500"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </Button>
+
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={next}
+                className="rounded-full border-gray-700 hover:border-emerald-500"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* Brand Logos */}
+      <div className="mt-16">
+        <p className="text-center text-gray-500 mb-8 uppercase tracking-wider text-sm">
+          Work with 60+ brands worldwide
+        </p>
+
+        <div className="flex flex-wrap justify-center items-center gap-12 opacity-30">
+          {Array(8)
+            .fill(0)
+            .map((_, i) => (
+              <div key={i} className="w-24 h-12 bg-gray-700 rounded"></div>
+            ))}
+        </div>
+      </div>
+    </div>
+  );
+}
