@@ -2,16 +2,16 @@
 
 import React, { useEffect, useState } from 'react';
 import { Mail, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import HeroSection from '../Components/Portfolio/HeroSection';
-import AboutSection from '../Components/Portfolio/AboutSection';
-import ResumeSection from '../Components/Portfolio/ResumeSection';
-import ServicesSection from '../Components/Portfolio/ServicesSection';
-import SkillsSection from '../Components/Portfolio/SkillsSection';
-import PortfolioSection from '../Components/Portfolio/PortfolioSection';
-import TestimonialSection from '../Components/Portfolio/TestimonialSection';
-import PricingSection from '../Components/Portfolio/PricingSection';
-import ContactSection from '../Components/Portfolio/ContactSection';
+import { Button } from '@/temp/ui/button';
+import HeroSection from '../temp/Portfolio/HeroSection';
+import AboutSection from '../temp/Portfolio/AboutSection';
+import ResumeSection from '../temp/Portfolio/ResumeSection';
+import ServicesSection from '../temp/Portfolio/ServicesSection';
+import SkillsSection from '../temp/Portfolio/SkillsSection';
+import PortfolioSection from '../temp/Portfolio/PortfolioSection';
+import TestimonialSection from '../temp/Portfolio/TestimonialSection';
+import PricingSection from '../temp/Portfolio/PricingSection';
+import ContactSection from '../temp/Portfolio/ContactSection';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');

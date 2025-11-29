@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/temp/ui/button";
+import { Input } from "@/temp/ui/input";
+import { Textarea } from "@/temp/ui/textarea";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Card } from "@/components/ui/card";
+} from "@/temp/ui/select";
+import { Card } from "@/temp/ui/card";
 import { Send, Paperclip } from "lucide-react";
 import { toast } from "sonner";
 
