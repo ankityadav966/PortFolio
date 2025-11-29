@@ -1,6 +1,6 @@
 import React from "react";
 import { Code, Palette, TrendingUp } from "lucide-react";
-import { Card } from "@/temp/ui/card";
+import { Card } from "@/Components/ui/card";
 
 // Dummy Services Data (UI same, no API)
 const services = [

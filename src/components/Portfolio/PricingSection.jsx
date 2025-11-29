@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "@/temp/ui/card";
-import { Button } from "@/temp/ui/button";
+import { Card } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
 import { Check } from "lucide-react";
 
 // Dummy Pricing Packages (UI same)
