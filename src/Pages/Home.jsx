@@ -17,6 +17,7 @@ import profiledata from "../../Ankit Yadav resuma.pdf";
 import { Linkedin, Github, Phone, FileText } from "lucide-react";
 
 import {
+  Compass   ,
   User,
   Briefcase,
   Zap,
@@ -178,6 +179,7 @@ export default function Home() {
       <nav className="fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
   <div className="flex flex-col gap-4">
     {[
+      { id: "home", label: "Home", icon: Compass   }, 
       { id: "about", label: "About", icon: User },
       { id: "resume", label: "Resume", icon: FileText },
       { id: "services", label: "Services", icon: Briefcase },
