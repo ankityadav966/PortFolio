@@ -8,7 +8,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/Components/ui/select";
+} from "@/components/ui/select";
+
 import { Card } from "@/components/ui/card";
 import { Send, Paperclip } from "lucide-react";
 import { toast } from "sonner";
