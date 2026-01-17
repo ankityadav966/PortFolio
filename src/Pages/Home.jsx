@@ -1,9 +1,8 @@
 // Home.jsx (Complete Updated Code Without API)
 
 import React, { useEffect, useState } from "react";
-import { Mail, MapPin } from "lucide-react";
-// import { Button } from '@/components/ui/button';
-import HeroSection from '../components/Portfolio/HeroSection';
+import { Mail, MapPin } from "lucide-react"; 
+import HeroSection from "../  /Portfolio/HeroSection";
 import AboutSection from "../components/Portfolio/AboutSection";
 import ResumeSection from "../components/Portfolio/ResumeSection";
 import ServicesSection from "../components/Portfolio/ServicesSection";
@@ -12,6 +11,7 @@ import PortfolioSection from "../components/Portfolio/PortfolioSection";
 import TestimonialSection from "../components/Portfolio/TestimonialSection";
 import PricingSection from "../components/Portfolio/PricingSection";
 import ContactSection from "../components/Portfolio/ContactSection";
+
 import { Button } from "@/components/ui/button";
 import profiledata from "../../Ankit Yadav resuma.pdf";
 import { Linkedin, Github, Phone, FileText } from "lucide-react";
