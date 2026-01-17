@@ -31,7 +31,7 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     setTimeout(() => {
-      toast.success("Your message was sent successfully!");
+      toast.success("Thanks for reaching out! I’ll get back to you soon.");
       setFormData({
         fullName: "",
         email: "",
@@ -55,7 +55,7 @@ export default function ContactSection() {
 
       {/* Heading */}
       <h2 className="text-5xl lg:text-6xl font-bold leading-tight mb-8">
-        Let's Work Together!
+        Let’s Build Something Together
       </h2>
 
       {/* Email Text */}
@@ -66,7 +66,8 @@ export default function ContactSection() {
       {/* Form Card */}
       <Card className="bg-[#1a1a1a] border-gray-800 p-8 max-w-3xl">
         <p className="text-gray-400 mb-8">
-          * Marked fields are required to fill.
+          * Please fill in the required fields so I can understand your project
+          better.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -84,7 +85,7 @@ export default function ContactSection() {
 
             <Input
               type="email"
-              placeholder="Email *"
+              placeholder="Email Address *"
               required
               value={formData.email}
               onChange={(e) =>
@@ -97,7 +98,7 @@ export default function ContactSection() {
           {/* Phone + Subject */}
           <div className="grid md:grid-cols-2 gap-6">
             <Input
-              placeholder="Phone (optional)"
+              placeholder="Phone Number (optional)"
               value={formData.phone}
               onChange={(e) =>
                 setFormData({ ...formData, phone: e.target.value })
@@ -113,13 +114,14 @@ export default function ContactSection() {
               required
             >
               <SelectTrigger className="bg-[#0a0a0a] border-gray-700 focus:border-emerald-500 h-14">
-                <SelectValue placeholder="Subject *" />
+                <SelectValue placeholder="Project Type *" />
               </SelectTrigger>
 
               <SelectContent>
-                <SelectItem value="website-design">Website Design</SelectItem>
-                <SelectItem value="development">Development</SelectItem>
-                <SelectItem value="seo-marketing">SEO/Marketing</SelectItem>
+                <SelectItem value="backend">Backend / API Development</SelectItem>
+                <SelectItem value="frontend">Frontend Development</SelectItem>
+                <SelectItem value="fullstack">Full Stack Project</SelectItem>
+                <SelectItem value="ai">AI Integration</SelectItem>
                 <SelectItem value="consultation">Consultation</SelectItem>
                 <SelectItem value="other">Other</SelectItem>
               </SelectContent>
@@ -128,7 +130,7 @@ export default function ContactSection() {
 
           {/* Budget */}
           <Input
-            placeholder="Your Budget (optional)"
+            placeholder="Estimated Budget (optional)"
             value={formData.budget}
             onChange={(e) =>
               setFormData({ ...formData, budget: e.target.value })
@@ -138,7 +140,7 @@ export default function ContactSection() {
 
           {/* Message */}
           <Textarea
-            placeholder="Message"
+            placeholder="Tell me about your project, requirements, or idea..."
             rows={6}
             value={formData.message}
             onChange={(e) =>
@@ -155,7 +157,7 @@ export default function ContactSection() {
               className="border-gray-700 hover:border-emerald-500"
             >
               <Paperclip className="w-4 h-4 mr-2" />
-              Add an attachment
+              Add Attachment (optional)
             </Button>
           </div>
 

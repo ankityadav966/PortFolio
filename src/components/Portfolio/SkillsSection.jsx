@@ -1,13 +1,19 @@
 import React from "react";
 
-// Dummy skills data (UI same, no API)
+// REAL Skills Data (UI SAME)
 const skills = [
-  { name: "Figma", percentage: 92, color: "bg-purple-500" },
-  { name: "Framer", percentage: 85, color: "bg-pink-500" },
-  { name: "Webflow", percentage: 80, color: "bg-blue-500" },
-  { name: "React", percentage: 90, color: "bg-cyan-500" },
-  { name: "WordPress", percentage: 86, color: "bg-indigo-500" },
-  { name: "Laravel/PHP", percentage: 70, color: "bg-red-500" },
+  { name: "JavaScript", percentage: 85, color: "bg-yellow-500" },
+  { name: "React.js", percentage: 88, color: "bg-cyan-500" },
+  { name: "Next.js", percentage: 80, color: "bg-gray-500" },
+  { name: "Redux", percentage: 78, color: "bg-purple-500" },
+  { name: "Node.js", percentage: 86, color: "bg-green-500" },
+  { name: "Express.js", percentage: 84, color: "bg-emerald-500" },
+  { name: "MongoDB", percentage: 82, color: "bg-green-600" },
+  { name: "PostgreSQL", percentage: 75, color: "bg-blue-600" },
+  { name: "HTML & CSS", percentage: 90, color: "bg-orange-500" },
+  { name: "Tailwind CSS", percentage: 88, color: "bg-sky-500" },
+  { name: "REST APIs", percentage: 85, color: "bg-indigo-500" },
+  { name: "Git & GitHub", percentage: 80, color: "bg-red-500" },
 ];
 
 export default function SkillsSection() {

@@ -9,37 +9,38 @@ export default function HeroSection({ onContactClick }) {
         <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 text-sm">
           <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
           <span className="text-gray-400 uppercase tracking-wider text-xs">
-            Introduce
+            Introduction
           </span>
         </div>
       </div>
 
       {/* HEADING */}
       <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-8">
-        Say Hi from <span className="text-emerald-500">Ankit</span>,<br />
-        Webflow Designer<br />
-        and Developer
+        Hi, I’m <span className="text-emerald-500">Ankit</span>,<br />
+        Full Stack Developer<br />
+        (Backend & AI Focused)
       </h1>
 
       {/* SUB TEXT */}
       <p className="text-xl text-gray-400 mb-16 max-w-2xl">
-        I design and code beautifully simple things and I love what I do. Just
-        simple like that!
+        I build scalable backend systems, responsive web applications, and
+        AI-powered features. Currently working on real-world projects involving
+        REST APIs, dashboards, and AI-based chat & code generation.
       </p>
 
       {/* STATS */}
       <div className="flex flex-wrap gap-16 mb-16">
         <div>
-          <div className="text-6xl font-bold text-emerald-500 mb-2">10+</div>
+          <div className="text-6xl font-bold text-emerald-500 mb-2">2+</div>
           <div className="text-gray-400 uppercase text-sm tracking-wider">
             Years of<br />Experience
           </div>
         </div>
 
         <div>
-          <div className="text-6xl font-bold text-emerald-500 mb-2">182+</div>
+          <div className="text-6xl font-bold text-emerald-500 mb-2">5+</div>
           <div className="text-gray-400 uppercase text-sm tracking-wider">
-            Projects completed on<br />15 countries
+            Live & Real-world<br />Projects
           </div>
         </div>
       </div>
@@ -69,7 +70,7 @@ export default function HeroSection({ onContactClick }) {
             />
             <text className="text-[8px] fill-gray-400 uppercase tracking-wider">
               <textPath href="#circlePath">
-                MY PROJECTS • MY PROJECTS • MY PROJECTS •
+                VIEW MY WORK • VIEW MY WORK • VIEW MY WORK •
               </textPath>
             </text>
           </svg>

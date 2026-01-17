@@ -3,31 +3,31 @@ import { Card } from "@/Components/ui/card";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/Components/ui/button";
 
-// Dummy Testimonials (UI same)
+// REALISTIC Testimonials (UI SAME)
 const testimonials = [
   {
-    name: "Paulo Dybala",
-    role: "CEO of IBM Global",
+    name: "Team Lead",
+    role: "Backend Developer, Intellix360",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&h=200&fit=crop",
     content:
-      "Ankit - A Developer with the creativity, professional and master of code. Much more than what I'm expect. High quality product & flexible price. Recommended!",
+      "Ankit worked on multiple backend modules including academics, accounts, and dashboards. He understands business logic well and always delivers clean and scalable APIs.",
   },
   {
-    name: "Christina Morillo",
-    role: "Product Management of Invision App Inc",
+    name: "Project Manager",
+    role: "Education Platform Project",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&h=200&fit=crop",
     content:
-      "Ankit was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer that you can trust with any project from A-Z.",
+      "Ankit is reliable and quick at solving problems. He handled backend integration smoothly and also supported the frontend team whenever issues came up.",
   },
   {
-    name: "Phil Foden",
-    role: "Director of Envato LLC",
+    name: "Frontend Developer",
+    role: "Brain Bucks Platform",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop",
     content:
-      "Extremely professional and fast service! Ankit is a master of code and he is also very creative. We completed 3 projects with him and will definitely continue.",
+      "Working with Ankit was easy. He helped resolve Redux and API-related issues and ensured smooth data flow between frontend and backend.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function TestimonialSection() {
 
       {/* Heading */}
       <h2 className="text-5xl lg:text-6xl font-bold leading-tight mb-16">
-        Trusted by Hundred Clients
+        What People Say
       </h2>
 
       {/* Testimonial Card */}
@@ -120,11 +120,11 @@ export default function TestimonialSection() {
       {/* Brand Logos */}
       <div className="mt-16">
         <p className="text-center text-gray-500 mb-8 uppercase tracking-wider text-sm">
-          Work with 60+ brands worldwide
+          Collaborated on multiple real-world projects
         </p>
 
         <div className="flex flex-wrap justify-center items-center gap-12 opacity-30">
-          {Array(8)
+          {Array(6)
             .fill(0)
             .map((_, i) => (
               <div key={i} className="w-24 h-12 bg-gray-700 rounded"></div>

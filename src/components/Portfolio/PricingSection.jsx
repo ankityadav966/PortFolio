@@ -3,33 +3,34 @@ import { Card } from "@/Components/ui/card";
 import { Button } from "@/Components/ui/button";
 import { Check } from "lucide-react";
 
-// Dummy Pricing Packages (UI same)
+// REAL Pricing Packages (UI SAME)
 const packages = [
   {
-    name: "Standard",
-    price: 49,
+    name: "Backend / API Development",
+    price: 20,
     features: [
-      "Need your wireframe",
-      "Design with Figma, Framer",
-      "Implement with Webflow, React, WordPress, Laravel/PHP",
-      "Remote/Online",
-      "Work in business days, no weekend",
-      "Support 6 months",
+      "REST API development using Node.js & Express",
+      "Database design (MongoDB / PostgreSQL)",
+      "Business logic & backend integration",
+      "Admin panels & dashboards",
+      "Bug fixing & optimization",
+      "Remote / Online work",
+      "Support for 1 month",
     ],
   },
   {
-    name: "Premium",
-    price: 99,
+    name: "Full Stack / AI Project",
+    price: 35,
     featured: true,
     features: [
-      "Don't need wireframe or anything",
-      "Design with Figma, Framer from scratch",
-      "Implement with Webflow, React, WordPress, Laravel/PHP",
-      "Remote/Online",
-      "Work with both weekend",
-      "Support 12 months",
-      "Your project always be priority",
-      "Customer care gifts",
+      "Frontend + Backend development",
+      "React / Next.js with Redux",
+      "Backend APIs & database integration",
+      "AI API integration (chat / code generation)",
+      "Responsive web application",
+      "Real-time debugging & support",
+      "Priority project handling",
+      "Support for 3 months",
     ],
   },
 ];
@@ -64,8 +65,11 @@ export default function PricingSection({ onContactClick }) {
             <div className="text-center mb-8">
               <div className="text-6xl font-bold mb-2">
                 ${pkg.price}
-                <span className="text-2xl font-normal opacity-70"> / hours</span>
+                <span className="text-2xl font-normal opacity-70"> / hour</span>
               </div>
+              <p className="uppercase tracking-wider text-sm opacity-80 mt-2">
+                {pkg.name}
+              </p>
             </div>
 
             {/* Features */}
@@ -95,7 +99,7 @@ export default function PricingSection({ onContactClick }) {
                   : "bg-emerald-500 text-white hover:bg-emerald-600"
               }`}
             >
-              Pick this package
+              Get Started
             </Button>
           </Card>
         ))}
@@ -104,13 +108,12 @@ export default function PricingSection({ onContactClick }) {
       {/* Bottom Message */}
       <div className="text-center max-w-2xl mx-auto">
         <p className="text-gray-400 text-lg">
-          Don't find any package match with your plan? Want to setup a new
-          tailor-made package for only you?{" "}
+          Need a custom solution or project-based pricing?{" "}
           <button
             onClick={onContactClick}
             className="text-emerald-500 hover:underline font-medium"
           >
-            Contact Us
+            Let’s discuss
           </button>
         </p>
       </div>

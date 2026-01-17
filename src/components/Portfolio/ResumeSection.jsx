@@ -1,32 +1,32 @@
 import React from "react";
 import { Briefcase, GraduationCap } from "lucide-react";
 
-// Dummy Resume Data (UI same)
+// REAL Resume Data (UI SAME)
 const experiences = [
   {
-    period: "2020 - Present",
-    title: "Framer Designer & Developer",
-    company: "Brunodee Agency",
+    period: "2025 - Present",
+    title: "Backend Developer (AI Project)",
+    company: "CodeAstra",
   },
   {
-    period: "2016 - 2020",
-    title: "Front-End WordPress Developer",
-    company: "Envato Market",
+    period: "2024 - 2025",
+    title: "Backend Developer",
+    company: "Intellix360",
   },
   {
-    period: "2013 - 2019",
-    title: "Webflow Developer & Co-Founder",
-    company: "Designflow Studio",
+    period: "2023 - 2024",
+    title: "Frontend Developer (Project-Based)",
+    company: "Maya & Brain Bucks",
   },
   {
-    period: "2010 - 2013",
-    title: "Web Designer",
-    company: "Freelance",
+    period: "2023 - Present",
+    title: "Bachelor of Computer Applications (BCA)",
+    company: "Manipal University",
   },
   {
-    period: "2008 - 2010",
-    title: "Leader Team of Marketing",
-    company: "AHA Marketing Agency",
+    period: "Completed",
+    title: "Senior Secondary (12th – Agriculture Stream)",
+    company: "Akshaya Education Sen. Sec. School",
   },
 ];
 

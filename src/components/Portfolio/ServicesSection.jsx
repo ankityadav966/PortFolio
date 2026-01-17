@@ -1,28 +1,31 @@
 import React from "react";
-import { Code, Palette, TrendingUp } from "lucide-react";
+import { Code, Database, Bot } from "lucide-react";
 import { Card } from "@/Components/ui/card";
 
-// Dummy Services Data (UI same, no API)
+// REAL Services Data (UI SAME)
 const services = [
   {
-    icon: Palette,
-    title: "Website Design",
-    description: "I created digital products with unique ideas use Figma & Framer",
-    projects: 24,
-    gradient: "from-blue-500/20 to-purple-500/20",
-  },
-  {
-    icon: Code,
-    title: "Development",
-    description: "I build website go live with Framer, Webflow or WordPress",
-    projects: 126,
+    icon: Database,
+    title: "Backend Development",
+    description:
+      "I build scalable backend systems using Node.js and Express.js, including REST APIs, business logic, authentication, dashboards, and database integrations.",
+    projects: 5,
     gradient: "from-emerald-500/20 to-cyan-500/20",
   },
   {
-    icon: TrendingUp,
-    title: "SEO/Marketing",
-    description: "Increase the traffic for your website with SEO optimized",
-    projects: 8,
+    icon: Code,
+    title: "Frontend Development",
+    description:
+      "I develop responsive and user-friendly web applications using HTML, CSS, Bootstrap, Tailwind CSS, React.js, Next.js, and Redux with clean UI/UX.",
+    projects: 4,
+    gradient: "from-blue-500/20 to-purple-500/20",
+  },
+  {
+    icon: Bot,
+    title: "AI Integration",
+    description:
+      "I work on AI-based features like chat and code generation by integrating AI models using APIs, handling prompts, responses, and error cases.",
+    projects: 2,
     gradient: "from-orange-500/20 to-red-500/20",
   },
 ];
@@ -68,7 +71,7 @@ export default function ServicesSection() {
 
             {/* Projects Count */}
             <div className="text-emerald-500 font-medium">
-              {service.projects} Projects
+              {service.projects}+ Projects
             </div>
           </Card>
         ))}
