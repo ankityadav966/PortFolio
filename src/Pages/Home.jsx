@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Mail, MapPin } from "lucide-react"; 
-import HeroSection from "../  /Portfolio/HeroSection";
+import HeroSection from "../components/Portfolio/HeroSection";
 import AboutSection from "../components/Portfolio/AboutSection";
 import ResumeSection from "../components/Portfolio/ResumeSection";
 import ServicesSection from "../components/Portfolio/ServicesSection";
