@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Button } from "@/Components/ui/button";
-import { Input } from "@/Components/ui/input";
-import { Textarea } from "@/Components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
@@ -9,7 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/Components/ui/select";
-import { Card } from "@/Components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Send, Paperclip } from "lucide-react";
 import { toast } from "sonner";
 

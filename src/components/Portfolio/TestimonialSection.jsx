@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Card } from "@/Components/ui/card";
+import { Card } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/components/ui/button";
 
 // REALISTIC Testimonials (UI SAME)
 const testimonials = [

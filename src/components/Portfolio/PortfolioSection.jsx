@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge } from "@/Components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 
 // REAL Project Data with LIVE LINKS (UI SAME)

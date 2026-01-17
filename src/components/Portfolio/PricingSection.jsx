@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "@/Components/ui/card";
-import { Button } from "@/Components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 // REAL Pricing Packages (UI SAME)
