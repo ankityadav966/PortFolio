@@ -31,9 +31,9 @@ export default function HeroSection({ onContactClick }) {
       {/* STATS */}
       <div className="flex flex-wrap gap-16 mb-16">
         <div>
-          <div className="text-6xl font-bold text-emerald-500 mb-2">2+</div>
+          <div className="text-6xl font-bold text-emerald-500 mb-2">8+</div>
           <div className="text-gray-400 uppercase text-sm tracking-wider">
-            Years of<br />Experience
+            month of<br />Experience
           </div>
         </div>
 

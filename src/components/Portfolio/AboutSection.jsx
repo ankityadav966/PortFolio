@@ -19,7 +19,7 @@ export default function AboutSection() {
       {/* Description */}
       <div className="text-xl text-gray-400 leading-relaxed space-y-6 max-w-4xl">
         <p>
-          I am a Full Stack Developer with over 2+ years of hands-on experience
+          I am a Full Stack Developer with over 8+ month of hands-on experience
           working on live production projects. My core strength lies in backend
           development using Node.js, Express.js, and REST APIs, along with
           frontend development using React.js and modern UI frameworks.
