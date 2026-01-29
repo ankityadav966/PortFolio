@@ -13,7 +13,7 @@ import PricingSection from "../components/Portfolio/PricingSection";
 import ContactSection from "../components/Portfolio/ContactSection";
 
 import { Button } from "@/components/ui/button";
-import profiledata from "../../Ankit Yadav resuma.pdf";
+import profiledata from "../../Ankit Yadav resuma.pdf.pdf";
 import { Linkedin, Github, Phone, FileText } from "lucide-react";
 
 import {
